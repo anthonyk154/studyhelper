@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Study Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="logo-block">
+        <span class="logo-dot"></span>
+        <h1>AI Study Notes</h1>
+      </div>
+       <div class="madeby">
+        <a style="text-decoration: none;" href="https://anthonyswebsites.site/"><h2>Made By: Anthonys Websites</h2></a>
+       </div>
+      <div id="userStatus">100% free · no login</div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-text">
+          <p class="pill">New • Smart study helper</p>
+          <h2>Turn your messy notes into clean study guides & quizzes.</h2>
+          <p class="hero-sub">
+            Paste the notes you already have — slides, class notes, homework — and get
+            summaries, key points, flashcards & practice questions in seconds.
+          </p>
+          <button class="primary" id="heroGetStarted">Start creating a Study Pack</button>
+          <p class="mini-note">No account · All features are free - Your Welcome</p>
+        </div>
+        <div class="hero-card">
+          <p class="hero-card-title">Example Study Pack</p>
+          <ul>
+            <li>✅ Auto-generated summary</li>
+            <li>📌 Key concepts pulled out for you</li>
+            <li>🧠 Flashcards to memorize the basics</li>
+            <li>❓ Quiz questions with explanations</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Builder -->
+      <section id="builderSection" class="card">
+        <h3>Create Study Pack</h3>
+        <input
+          id="packTitle"
+          type="text"
+          placeholder="Topic name (e.g. Photosynthesis, Linear Equations)"
+        />
+        <textarea
+          id="packNotes"
+          placeholder="Paste your notes here. AI will turn this into a summary, key points, flashcards & quiz."
+        ></textarea>
+        <div class="row-buttons">
+          <button id="createPackBtn" class="ghost">Save without AI</button>
+          <button id="generatePackBtn" class="primary">Generate with AI ✨</button>
+        </div>
+        <p class="hint">
+          Study Packs are saved in your browser. Clear your browser data = they are gone.
+        </p>
+        <p class="error" id="packError"></p>
+      </section>
+
+      <!-- Packs list -->
+      <section class="card">
+        <div class="list-header">
+          <h3>Your Study Packs</h3>
+          <button id="clearAllBtn" class="ghost small-btn">Clear all</button>
+        </div>
+        <div id="packsList"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
